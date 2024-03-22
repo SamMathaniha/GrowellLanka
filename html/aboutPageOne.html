@@ -1,0 +1,260 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growell Lanka (PVT) LTD About Page</title>
+
+    <!-- Style Css Link that used in index page -->
+    <link rel="stylesheet" href="../Css/style.css">
+
+    <!-- Style Css Link that for this page-->
+    <link rel="stylesheet" href="../Css/aboutStyle.css">
+
+    <!-- icons css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+<!-- Header Start -->
+<div class="headerContantDetails">
+    <p> 📞 112-589102 / 076-0950481  ||
+        📧 info@growelllanka.com</p>
+</div>
+
+ <!-- Navigation bar -->
+  
+<header>
+ <div class="container"> 
+     <nav class="navbar">
+       <!-- Logo -->
+      <div class="logo">
+        <img src="./images/logo.png" alt="asdasdasd" onclick="openIndexPage()">
+     </div>
+     <script>
+      function openIndexPage() {
+        window.location.href = "index.html";
+      }
+    </script>
+    
+       <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="aboutPageOne.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="Services.html" class="nav-link">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="Careers.php" class="nav-link">Careers</a>
+        </li>
+        <li class="nav-item">
+          <a href="Contact.html" class="nav-link">Contact</a>
+        </li>
+       </ul>
+       <div class="login-signup">
+         <a href="login.php">Login</a> 
+     </div>
+     
+       <div class="smallScreen">
+         <span class="bar"></span>
+         <span class="bar"></span>
+         <span class="bar"></span>
+       </div>
+     </nav>
+  </div>
+</header>
+
+<!--When screen get small-->
+ <script>
+     const smallScreen = document.querySelector(".smallScreen");
+const navMenu = document.querySelector(".nav-menu");
+
+smallScreen.addEventListener("click", () => {
+ smallScreen.classList.toggle("active");
+navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+ smallScreen.classList.remove("active");
+navMenu.classList.remove("active");
+}))
+     
+ </script>
+<!-- Header End -->
+
+
+    <!-- Home Section Start -->
+    <div class="aboutHome">
+        <div >
+            <h1 class="glow" style="padding: 60px; "> About Us</h1>
+            
+        </div>
+    </div>
+<div class="AboutMainBody">
+<div class="aboutCompany">
+
+       <!-- ======= Home page welcome ======== --> 
+
+    <div class ="greetNote">
+        <h1>WELCOME TO <span> GROWELL LANKA (PVT) LTD! </span></h1>
+        <h3> - Your Trusted and leading property management company in Sri Lanka -</h3> <br>
+        
+               <!-- ======= Small navigation bar for about session ======== --> 
+       <div class="Aboutnavbar">
+        <label class="Aboutnav-item">
+          <input type="radio" name="radio" checked="" onclick="window.location.href='aboutPageOne.html'">
+          <span class="name">GROWELL</span>
+        </label>
+        <label class="Aboutnav-item">
+          <input type="radio" name="radio" onclick="window.location.href='aboutPageTwo.html'">
+          <span class="name">Director Message</span>
+        </label>
+            
+        <label class="Aboutnav-item">
+          <input type="radio" name="radio" onclick="window.location.href='aboutOurTeam.html'">
+          <span class="name">Our Team</span>
+        </label>
+      </div>
+
+ <!-- ======= Staring Card ======== --> 
+        
+        
+        <div class="aboutCard">
+            <div class="tools">
+              <div class="circle">
+                <span class="red box"></span>
+              </div>
+              <div class="circle">
+                <span class="yellow box"></span>
+              </div>
+              <div class="circle">
+                <span class="green box"></span>
+              </div>
+            </div>
+            <div class="card__content">
+                <p>Over the years the company has emerged as one of the market leaders in facility management in Sri Lanka, serving local and multinational companies in several cities. Our Staff based out of our offices and on location at various sites provide a professional and comprehensive MEP and housekeeping service as an adjunct to the total property management solution provided by us. We manage over 250 employees in varying technical disciplines as well as general administration, housekeeping, janitorial services, health and safety.</p>
+        <p>The group has been successfully providing complete Facility Management services to Corporate, manufacturing, retails and banking & financial institutions, wherein, keeping its tradition of delivering customized service solutions to its customers By utilizing its vast expertise and knowledge.</p>
+            </div>
+          </div>
+      </div>
+
+
+          <!-- client, employee, count -->
+    <div class="cont">
+
+        <div class="counters">
+            <div class="counter-wrapper">
+                <span class="counter-icon" ><img src="./images/happyClient.png"></span>
+                <div class="counter-info">
+                    <h1 class="counter" >30+</h1>
+                    <p>Happy Clients</p>
+                </div>
+            </div>
+            <div class="counter-wrapper">
+                <span class="counter-icon"><img src="./images/Employee.png"></span>
+                <div class="counter-info">
+                    <h1 class="counter" data-count="100">250+</h1>
+                    <p>Employees</p>
+                </div>
+            </div>
+            <div class="counter-wrapper">
+                <span class="counter-icon"><img src="./images/greenLeaf.png"></span>
+                <div class="counter-info">
+                    <h1 class="counter" data-count="250">100%</h1>
+                    <p>Green Focus</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!--========== Service Section Start ======= -->
+    <div class = "ServicesAboutPage">
+        
+    <h1>OUR <span>  STRENGTH </span></h1><br>
+    <div class="aboutCard">
+        <div class="tools">
+          <div class="circle">
+            <span class="red box"></span>
+          </div>
+          <div class="circle">
+            <span class="yellow box"></span>
+          </div>
+          <div class="circle">
+            <span class="green box"></span>
+          </div>
+        </div>
+        <div class="card__content">
+            <p>We&apos;re experienced at handling high-traffic, high volume commercial accounts, including restaurants, hotels, hospitals, factories and commercial office buildings. Commercial sites pose tough challenges, including ground in grease, dense traffic patterns worn into carpets and the potential for unnecessary wear and tear to carpets from too-frequent cleaning. Using our extensive experience in facility management, we have the skills and abilities needed to bring your site beyond to the level of cleanliness you expected.</p>
+        <p>Growell Lanka has been providing excellent customer service to various businesses and households in Sri Lanka, as evidenced can be collected from the given clients. The organization now has reached to 200 fully trained and service oriented employees. To achieve the highest standards in cleaning services and facility Management we have implemented our own in-built quality control incentive program and conduct regularly scheduled inspections of all contracts on an ongoing basis by the supervisors and field managers who have years of experience in the trade. We believe in addition to the expertise in cleaning, communication, interaction and teamwork it is &apos;key&apos; to successfully maintain the cleanliness of our client businesses. As such the senior management and operations staff can be reached at all times by phone, whatsapp and email</p>
+      </div>
+   </div>
+<!--========== Icons Phone Number & Email ======= -->
+   <div class="box">
+    <div class="box-row">
+        <div class="box-cell box1">
+        <img class = box-icon src="images/phoneIcon.png">
+        <p>076-0950481 / 076-0950482 / 076-0950483 / 076-0950484</p>
+        </div>
+        <div class="box-cell box2">
+            <img class = box-icon src="images/EmailIcon.png">
+          <p> info@growelllanka.com </p> 
+
+        </div>
+    </div>
+</div>
+    </div><br>
+
+
+    
+ <!--========== Ready to work with us ======= -->
+
+ <div class="aboutCardWhite">
+    <div class="toolsWhite">
+      <div class="circle">
+        <span class="red box"></span>
+      </div>
+      <div class="circle">
+        <span class="yellow box"></span>
+      </div>
+      <div class="circle">
+        <span class="green box"></span>
+      </div>
+    </div>
+    <div class="card__contentWhite"  style="display: flex; align-items: center; justify-content: center;">
+        <h3>READY TO WORK WITH US?  </h3>
+        <a class="SelectButton" href="Services.html"><button id="about-btn" style="width: 170px; height:35px;">Our Services </button></a>
+    </div>
+</div>
+</div> <br>
+<!--============ Footer =================-->
+<footer>
+    <div class="footer">
+        <div class="glow"><p>Growell Lanka (PVT) LTD</p></div>
+    
+    <div class="row">
+    <ul>
+    <li><a href="#">Contact us</a></li>
+    <li><a href="#">Our Services</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Terms & Conditions</a></li>
+    <li><a href="#">Career</a></li>
+    </ul>
+    </div>
+    <div class="mediaButton">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+    
+    </div>
+    
+    <div class="row">
+         Copyright  ©  2023 Growell Lanka (PVT) LTD - All rights reserved      || Designed By: Sam Mathaniha 
+    </div>
+    
+    </div>
+ </footer>
+</body>
+</html>

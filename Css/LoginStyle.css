@@ -1,0 +1,221 @@
+body {
+    background-image: url(../html/images/pexels-maxime-francis-2246476.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: movingBackground 20s infinite linear;
+}
+
+@keyframes movingBackground {
+    0% {
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*Navi bar*/
+
+.radio-inputs {
+  position: relative;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background-color: #EEE;
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  width: 300px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.whoAreYou {
+  font-family: 'Arial', sans-serif;
+  color: #000000;
+  text-shadow: 0 0 5px #000000;
+  animation: glowingText 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glowingText {
+  0% {
+    text-shadow: 0 0 5px #ffee00;
+  }
+  50% {
+    text-shadow: 0 0 20px #ffe101;
+  }
+  100% {
+    text-shadow: 0 0 5px #ffc002;
+  }
+}
+
+.radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.radio-inputs .radio input {
+  display: none;
+}
+
+.radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: .5rem 0;
+  color: rgba(51, 65, 85, 1);
+  transition: all .15s ease-in-out;
+}
+
+.radio-inputs .radio input:checked + .name {
+  background-color: #fff;
+  font-weight: 600;
+}
+
+
+/*Navi bar end*/
+.content {
+    width: 400px;
+    padding: 50px 40px;
+    font-size: 20px;
+    background: rgba(221, 225, 231, 0.8); /* Modified */
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+  
+  .content .text {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #595959;
+  }
+
+  .content .Whotext {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #2c2b2b;
+  }
+  
+  .field {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+  
+  .field:nth-child(2) {
+    margin-top: 20px;
+  }
+  
+  .field .input {
+    height: 100%;
+    width: 100%;
+    padding-left: 45px;
+    outline: none;
+    border: none;
+    padding-left: 60px;
+    border-radius: 30px;
+    font-size: 24px;
+    background: #dde1e7;
+    color: #595959;
+    box-shadow: inset 2px 2px 5px #BABECC,
+                inset -5px -5px 10px #ffffff73;
+  }
+  
+  .field .input:focus {
+    box-shadow: inset 1px 1px 2px #BABECC,
+                inset -1px -1px 2px #ffffff73;
+  }
+  
+  
+  .field .label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 60px;
+    pointer-events: none;
+    color: #666666;
+  }
+  
+  .field .input:valid ~ label {
+    opacity: 0;
+  }
+  
+  .forgot-pass {
+    text-align: left;
+    margin: 15px 0 15px 10px;
+  }
+  
+  .forgot-pass a {
+    font-size: 20px;
+    color: #666666;
+    text-decoration: none;
+  }
+  
+  .forgot-pass:hover a {
+    text-decoration: underline;
+  }
+  
+  .button {
+    margin: 20px  0;
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    line-height: 60px;
+    font-weight: 600;
+    background: #dde1e7;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #595959;
+    box-shadow: 2px 2px 5px #BABECC,
+               -5px -5px 10px #ffffff73;
+  }
+  
+  .button:focus {
+    color: #3498db;
+    box-shadow: inset 2px 2px 5px #BABECC,
+               inset -5px -5px 10px #ffffff73;
+  }
+
+
+  .sign-up {
+    margin: 5px 0;
+    color: #595959;
+    font-size: 20px;
+  }
+  
+  .sign-up a {
+    font-size: 20px;
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .sign-up a:hover {
+    text-decoration: underline;
+  }
+
+  .homeIcon{
+    margin-top: 20PX;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }

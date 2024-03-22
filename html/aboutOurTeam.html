@@ -1,0 +1,266 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growell Lanka (PVT) LTD About Page</title>
+
+    <!-- Style Css Link that used in index page -->
+    <link rel="stylesheet" href="../Css/style.css">
+
+    <!-- Style Css Link that for this page-->
+    <link rel="stylesheet" href="../Css/aboutStyle.css">
+
+    <!-- icons css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+<!-- Header Start -->
+<div class="headerContantDetails">
+    <p> 📞 112-589102 / 076-0950481  ||
+        📧 info@growelllanka.com</p>
+</div>
+
+ <!-- Navigation bar -->
+  
+<header>
+ <div class="container"> 
+     <nav class="navbar">
+
+      <div class="logo">
+        <img src="./images/logo.png" alt="asdasdasd" onclick="openIndexPage()">
+     </div>
+     <script>
+      function openIndexPage() {
+        window.location.href = "index.html";
+      }
+    </script>
+    
+       <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="aboutPageOne.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="Services.html" class="nav-link">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="Careers.php" class="nav-link">Careers</a>
+        </li>
+        <li class="nav-item">
+          <a href="Contact.html" class="nav-link">Contact</a>
+        </li>
+       </ul>
+       <div class="login-signup">
+         <a href="login.php">Login</a> 
+     </div>
+     
+       <div class="smallScreen">
+         <span class="bar"></span>
+         <span class="bar"></span>
+         <span class="bar"></span>
+       </div>
+     </nav>
+  </div>
+</header>
+
+<!--When screen get small-->
+ <script>
+     const smallScreen = document.querySelector(".smallScreen");
+const navMenu = document.querySelector(".nav-menu");
+
+smallScreen.addEventListener("click", () => {
+ smallScreen.classList.toggle("active");
+navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+ smallScreen.classList.remove("active");
+navMenu.classList.remove("active");
+}))
+     
+ </script>
+<!-- Header End -->
+
+
+    <!-- Home Section Start -->
+    <div class="aboutHome">
+        <div >
+            <h1 class="glow" style="padding: 60px; "> About Us</h1>
+            
+        </div>
+    </div>
+    <div class="AboutMainBody">
+        <div class="aboutCompany">
+        
+               <!-- ======= Home page welcome ======== --> 
+        
+            <div class ="greetNote">
+                <h1>WELCOME TO <span> GROWELL LANKA (PVT) LTD! </span></h1>
+                <h3> - Your Trusted and leading property management company in Sri Lanka -</h3> <br>
+                
+                       <!-- ======= Small navigation bar for about session ======== --> 
+               <div class="Aboutnavbar">
+                <label class="Aboutnav-item">
+                  <input type="radio" name="radio"  onclick="window.location.href='aboutPageOne.html'">
+                  <span class="name">GROWELL</span>
+                </label>
+                <label class="Aboutnav-item">
+                  <input type="radio" name="radio" onclick="window.location.href='aboutPageTwo.html'">
+                  <span class="name">Director Message</span>
+                </label>
+                    
+                <label class="Aboutnav-item">
+                  <input type="radio" name="radio" checked="" onclick="window.location.href='aboutOurTeam.html'">
+                  <span class="name">Our Team</span>
+                </label>
+              </div>
+              <h3 class="Dname"> WE BELIEVE IN <span > QUALITY, SUPERVISION, AND COMMUNICATION </span> </h3><br>
+            </div>
+         <!-- ======= company-hierarchy ======== -->  
+        
+         <div class="company-hierarchy">
+          <div class="director">
+            <img src="images/pic-3.png" alt="Director">
+            <div class="info">
+              <p class="position">Director</p>
+              <p class="name">Jude Fernando</p>
+            </div>
+          </div>
+          <div class="managers">
+            <div class="manager">
+              <img src="images/pic-3.png" alt="Manager 1">
+              <div class="info">
+                <p class="position">Head Of HR</p>
+                <p class="name">S.A.Winston Rosairo</p>
+              </div>
+            </div>
+            <div class="manager">
+              <img src="images/pic-3.png" alt="Manager 2">
+              <div class="info">
+                <p class="position">Chief Accountant</p>
+                <p class="name">P.D.U.D.Jayathissa</p>
+              </div>
+            </div>
+            <div class="manager">
+              <img src="images/pic-3.png" alt="Manager 3">
+              <div class="info">
+                <p class="position">Head of Operations</p>
+                <p class="name">J.M Hammad</p>
+              </div>
+            </div>
+          </div>
+          <div class="managers">
+            <div class="manager">
+              <img src="images/pic-3.png" alt="Manager 1">
+              <div class="info">
+                <p class="position">Head Of IT Department</p>
+                <p class="name">Avinash Fernando</p>
+              </div>
+            </div>
+            <div class="manager">
+              <img src="images/pic-3.png" alt="Manager 2">
+              <div class="info">
+                <p class="position">Food and Beverage Manager</p>
+                <p class="name">Anukshala Fernando</p>
+              </div>
+            </div>
+            <div class="manager">
+              <img src="images/pic-3.png" alt="Manager 3">
+              <div class="info">
+                <p class="position">Operations Executive</p>
+                <p class="name">W.S Niranjan Fernando</p>
+              </div>
+            </div>
+          </div>
+          <div class="team-leaders">
+            <div class="team-leader">
+              <img src="images/pic-3.png" alt="Team Leader 1">
+              <div class="info">
+                <p class="position">Senior HK Supervisor</p>
+                <p class="name">M Jegan</p>
+              </div>
+            </div>
+            <div class="team-leader">
+              <img src="images/pic-3.png" alt="Team Leader 2">
+              <div class="info">
+                <p class="position">Senior HK Supervisor</p>
+                <p class="name">Anura Sebastian</p>
+              </div>
+            </div>
+            <div class="team-leader">
+              <img src="images/pic-3.png" alt="Team Leader 3">
+              <div class="info">
+                <p class="position">General Supervisor</p>
+                <p class="name">H.M Sarath Gaminiwansa</p>
+              </div>
+            </div>
+            <div class="team-leader">
+              <img src="images/pic-3.png" alt="Team Leader 4">
+              <div class="info">
+                <p class="position">Facility Executive</p>
+                <p class="name">Pradeep Jayathilaka</p>
+              </div>
+            </div>
+          </div>
+          <div class="staff">
+            <img src="images/pic-3.png" alt="Team Leader 4">
+            <div class="info">
+              <p class="position">Staff</p>
+              <p class="name">250+ Staffs at site</p>
+            </div>
+          </div>
+        </div>
+        
+        
+ <!--========== Ready to work with us ======= -->
+
+ <div class="aboutCardWhite">
+    <div class="toolsWhite">
+      <div class="circle">
+        <span class="red box"></span>
+      </div>
+      <div class="circle">
+        <span class="yellow box"></span>
+      </div>
+      <div class="circle">
+        <span class="green box"></span>
+      </div>
+    </div>
+    <div class="card__contentWhite"  style="display: flex; align-items: center; justify-content: center;">
+        <h3>READY TO WORK WITH US?  </h3>
+        <a class="SelectButton" href="Services.html"><button id="about-btn" style="width: 170px; height:35px;">Our Services </button></a>
+    </div>
+</div>
+</div> <br>
+<!--============ Footer =================-->
+<footer>
+    <div class="footer">
+        <div class="glow"><p>Growell Lanka (PVT) LTD</p></div>
+    
+    <div class="row">
+    <ul>
+    <li><a href="#">Contact us</a></li>
+    <li><a href="#">Our Services</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Terms & Conditions</a></li>
+    <li><a href="#">Career</a></li>
+    </ul>
+    </div>
+    <div class="mediaButton">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+    
+    </div>
+    
+    <div class="row">
+         Copyright  ©  2023 Growell Lanka (PVT) LTD - All rights reserved      || Designed By: Sam Mathaniha 
+    </div>
+    
+    </div>
+ </footer>
+</body>
+</html>

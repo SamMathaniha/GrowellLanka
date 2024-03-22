@@ -1,0 +1,197 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growell Lanka (PVT) LTD About Page</title>
+
+    <!-- Style Css Link that used in index page -->
+    <link rel="stylesheet" href="../Css/style.css">
+
+    <!-- Style Css Link that for this page-->
+    <link rel="stylesheet" href="../Css/aboutStyle.css">
+
+    <!-- icons css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+<!-- Header Start -->
+<div class="headerContantDetails">
+    <p> 📞 112-589102 / 076-0950481  ||
+        📧 info@growelllanka.com</p>
+</div>
+
+ <!-- Navigation bar -->
+  
+<header>
+ <div class="container"> 
+     <nav class="navbar">
+       <!-- Logo -->
+      <div class="logo">
+        <img src="./images/logo.png" alt="asdasdasd" onclick="openIndexPage()">
+     </div>
+     <script>
+      function openIndexPage() {
+        window.location.href = "index.html";
+      }
+    </script>
+    
+       <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="aboutPageOne.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="Services.html" class="nav-link">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="Careers.php" class="nav-link">Careers</a>
+        </li>
+        <li class="nav-item">
+          <a href="Contact.html" class="nav-link">Contact</a>
+        </li>
+       </ul>
+       <div class="login-signup">
+         <a href="login.php">Login</a> 
+     </div>
+     
+       <div class="smallScreen">
+         <span class="bar"></span>
+         <span class="bar"></span>
+         <span class="bar"></span>
+       </div>
+     </nav>
+  </div>
+</header>
+
+<!--When screen get small-->
+ <script>
+     const smallScreen = document.querySelector(".smallScreen");
+const navMenu = document.querySelector(".nav-menu");
+
+smallScreen.addEventListener("click", () => {
+ smallScreen.classList.toggle("active");
+navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+ smallScreen.classList.remove("active");
+navMenu.classList.remove("active");
+}))
+     
+ </script>
+<!-- Header End -->
+
+
+    <!-- Home Section Start -->
+    <div class="aboutHome">
+        <div >
+            <h1 class="glow" style="padding: 60px; "> About Us</h1>
+            
+        </div>
+    </div>
+<div class="AboutMainBody">
+<div class="aboutCompany">
+
+       <!-- ======= Home page welcome ======== --> 
+
+    <div class ="greetNote">
+        <h1>WELCOME TO <span> GROWELL LANKA (PVT) LTD! </span></h1>
+        <h3> - Your Trusted and leading property management company in Sri Lanka -</h3> <br>
+        
+               <!-- ======= Small navigation bar for about session ======== --> 
+       <div class="Aboutnavbar">
+        <label class="Aboutnav-item">
+          <input type="radio" name="radio" onclick="window.location.href='aboutPageOne.html'">
+          <span class="name">GROWELL</span>
+        </label>
+        <label class="Aboutnav-item">
+          <input type="radio" name="radio" checked=""  onclick="window.location.href='aboutPageTwo.html'">
+          <span class="name">Director's Message</span>
+        </label>
+            
+        <label class="Aboutnav-item">
+          <input type="radio" name="radio" onclick="window.location.href='aboutOurTeam.html'">
+          <span class="name">Our Team</span>
+        </label>
+      </div>
+    </div>
+
+ <!-- Home Section Start -->
+
+<div class="aboutCompanyTwo">
+
+  <div class="MessageImage">
+      <img src="images/DirectorPro.jpg" alt="Avatar" style="width:200px">
+  </div>
+  <h3 class="Dname"> MR. <span >JUDE FERNANDO </span> </h3>
+
+</div>
+<hr>
+<!--============ Message from the derector =================-->
+<div class="message">
+  <div class="Messagecircle"></div>
+  <div class="Messagecircle"></div>
+  <div class="message-inner">
+  <p>Every great journey starts with a single step. We took the very first step with sheer hard work and a dedicated team of 7 individuals, in our mind to provide scaled new heights of workplace excellence.  Growell Lanka Pvt Ltd (GLPL), the journey began in 2019 with 8 staff in a single site was a humble beginning. <br><br>
+Since our inception in 2019, we have carved a solid business foundation through sheer determination and passion to deliver world-class solutions. Today GLPL is a name to reckon with and is highly respected in the facility management sector. We owe our humble success to our hard-working team and our gracious clients equally.
+<br><br>
+We believe in the People service profit concept. Our highly experienced facilities management team works with clients to ensure safe, compliant, and professional built environments through evaluation, maintenance, repair, and upgrade of their facilities. 
+<br><br>
+We assign the right people to the right place at the right time to achieve the best outcomes. This improves and standardizes service provision across a portfolio and creates significant cost savings for our clients. we provide a complete facilities management service to clients in both public and private sectors across Srilanka
+<br><br>
+Powered by integrated management, we deliver Facilities Management solutions that connect and elevate all aspects of your operations. An end-to-end operating model unites people, assets, data, technology, budgets, and contracts to drive best-in-class performance and business productivity. Our solutions support distinct client requirements including multi-national enterprises, local single-market companies, on-demand facility support, data centers, critical operations, and more.</p></div>
+</div>
+ <!--========== Ready to work with us ======= -->
+
+ <div class="aboutCardWhite">
+    <div class="toolsWhite">
+      <div class="circle">
+        <span class="red box"></span>
+      </div>
+      <div class="circle">
+        <span class="yellow box"></span>
+      </div>
+      <div class="circle">
+        <span class="green box"></span>
+      </div>
+    </div>
+    <div class="card__contentWhite"  style="display: flex; align-items: center; justify-content: center;">
+        <h3>READY TO WORK WITH US?  </h3>
+        <a class="SelectButton" href="Services.html"><button id="about-btn" style="width: 170px; height:35px;">Our Services </button></a>
+    </div>
+</div>
+</div> <br>
+
+
+<!--============ Footer =================-->
+<footer>
+    <div class="footer">
+        <div class="glow"><p>Growell Lanka (PVT) LTD</p></div>
+    
+    <div class="row">
+    <ul>
+    <li><a href="#">Contact us</a></li>
+    <li><a href="#">Our Services</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Terms & Conditions</a></li>
+    <li><a href="#">Career</a></li>
+    </ul>
+    </div>
+    <div class="mediaButton">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+    
+    </div>
+    
+    <div class="row">
+         Copyright  ©  2023 Growell Lanka (PVT) LTD - All rights reserved      || Designed By: Sam Mathaniha 
+    </div>
+    
+    </div>
+ </footer>
+</body>
+</html>

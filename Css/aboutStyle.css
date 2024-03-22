@@ -1,0 +1,621 @@
+
+/* =================== Home Main image with text Start ====================== */
+
+.aboutHome{
+    width: 100%;
+    height: 50vh;
+    background-image: url(../html/images/aboutuss.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 50%;
+}
+
+/*  glowing letter "About US" */
+  
+@keyframes glow {
+    from {
+      text-shadow: 0 0 5px #ffffff, 0 0 10px #fff, 0 0 30px #35ff0d, 0 0 40px #0cff03, 0 0 50px #67ff08, 0 0 20px #22fc01, 0 0 40px #5eff07;
+    }
+    
+    to {
+      text-shadow: 0 0 80px #fff, 0 0 15px #00ff1a, 0 0 40px #2afd0a, 0 0 50px #30fb08, 0 0 60px #48ff00, 0 0 50px #33fd00, 0 0 60px #43f508;
+    }
+  }
+
+/* The small Navibar inside the about session*/
+
+
+.Aboutnavbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 0.5rem;
+    background-color: #f4ff56;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 100%;
+    max-width: 400px;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  .Aboutnavbar .Aboutnav-item {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  
+  .Aboutnavbar .Aboutnav-item input {
+    display: none;
+  }
+  
+  .Aboutnavbar .Aboutnav-item .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+  }
+  
+  .Aboutnavbar .Aboutnav-item input:checked + .name {
+    background-color: #ff0800;
+    font-weight: 600;
+  }
+  
+  .Aboutnavbar .Aboutnav-item input:checked + .name:hover {
+    background-color: #6aff00;
+   
+  }
+  
+  .Aboutnavbar .Aboutnav-item input:checked + .name:active {
+    background-color: #0256ff;
+    
+  }
+  
+/* The small Navibar inside the about session END*/
+
+
+  .aboutCard {
+  
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    background-color: #011522;
+    border-radius: 8px;
+    z-index: 1;
+    color: white;
+   }
+   
+   .aboutCard .tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+   }
+   
+   .aboutCard .circle {
+    padding: 0 4px;
+   }
+   
+   .aboutCard .box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+   }
+   
+   .red {
+    background-color: #ff605c;
+   }
+   
+   .yellow {
+    background-color: #ffbd44;
+   }
+   
+   .green {
+    background-color: #00ca4e;
+   }
+   
+
+
+/* ====margin design ====== */
+.aboutCompany{ 
+margin: 2px 15% 5px 15%;
+}
+
+.AboutMainBody{
+background-color: #0c0647;
+}
+h1 {
+    margin-top: 50px;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  text-shadow: 0px 1px 3px rgb(0, 0, 0);
+  }
+ 
+h1 span{
+    color: #50bd1df9;
+  }
+.greetNote{
+    margin-bottom: 50px;
+}
+
+.greetNote h3 {
+    margin-top: 15px;
+    text-align: center;
+    color: #01f7ff;
+    text-shadow: 0 0 5px #000000, 0 0 8px #000000;
+  }
+.greetNote p {
+    margin: 10PX 7% 10PX 7%;
+    text-indent: 50px;
+    font-size: 18PX;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+.cont{
+    margin-left: 45px;
+}
+.cont .counter-info{
+  margin-bottom: 75px;
+}
+/* =====  OUR STRENGth SESSION =====*/
+.ServicesAboutPage P{
+    margin: 10PX 6% 10PX 6%;
+    text-indent: 50px;
+    font-size: 18PX;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+/*Email & phonenumber*/
+ .box .box-cell.box1 {
+    background-color: #0c0647;
+  color:rgb(0, 0, 0);
+  text-align:Center;
+}
+.box .box-cell.box2 {
+    background-color: #0c0647;
+  text-align:center;
+}
+.box img{
+  margin: 20px 45% 20px ;
+  width: 80px;
+  height: 80px;
+}
+.box p{
+  font-family:'Gill Sans', 'Gill Sans MT,Trebuchet MS', sans-serif;
+  text-align: center;
+  text-decoration: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  
+}
+
+/*======== Ready to work with us =========*/
+
+.about-text {
+  
+  padding-left: 20%;
+  
+}
+.about-text h3{
+  font-size: 50px;
+}
+/* ========================== End of the session ====== */
+
+
+/*============================ Director Message session ================*/
+.aboutCompanyTwo{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/*director img*/
+.MessageImage img {
+  border-radius: 50%;
+  margin-bottom: 25px;
+
+}
+
+/*director Name*/
+.Dname {
+
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 0px 3px 5px black;
+}
+.Dname span{
+  color: #50bd1df9;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #388b6f;
+  text-shadow: 0px 1px 1px black;
+}
+.Dname span{
+  color:  #50bd1df9;
+}
+
+/* white color box to "ready to work with us?" */
+.aboutCardWhite {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    z-index: 1;
+    background:
+    linear-gradient(rgba(0, 255, 229, 0.807), transparent),
+    linear-gradient(to top left, rgb(1, 196, 255), transparent),
+    linear-gradient(to top right, rgb(49, 255, 3), transparent);
+    background-blend-mode: screen;
+   }
+   
+   .aboutCardWhite .toolsWhite {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+   }
+   
+   .aboutCardWhite .circle {
+    padding: 0 4px;
+   }
+   
+   .aboutCardWhite .box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+   }
+   .aboutCardWhite h3{
+    color: #000000;
+    text-shadow: 2px 2px 4px #ff0202a8;
+
+   }
+   
+   .red {
+    background-color: #ff605c;
+   }
+   
+   .yellow {
+    background-color: #ffbd44;
+   }
+   
+   .green {
+    background-color: #00ca4e;
+   }
+
+/* ============== message from the director =============*/
+
+.message{
+  margin-top: 30px;
+  width: auto;
+  height: auto;
+  margin-bottom: 80px;
+  transition: all 0.2s;
+  position: relative;
+  cursor: pointer;
+}
+
+.message-inner {
+  width: auto;
+  height: auto;
+  background: rgba(214, 202, 202, 0.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center; 
+
+}
+
+.message:hover {
+  transform: scale(1.04) rotate(1deg);
+}
+
+.Messagecircle {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#b0e633, #53ef7d);
+  border-radius: 50%;
+  position: absolute;
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+
+.Messagecircle:nth-child(1) {
+  top: -25px;
+  left: -25px;
+}
+
+.Messagecircle:nth-child(2) {
+  bottom: -25px;
+  right: -25px;
+  animation-name: move-down1;
+}
+
+@keyframes move-up6 {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes move-down1 {
+  to {
+    transform: translateY(10px);
+  }
+}
+
+/*===== Our team hierarchy ===========*/
+.company-hierarchy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-hierarchy > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.company-hierarchy img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.company-hierarchy .info {
+  text-align: center;
+}
+
+.company-hierarchy .position {
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.company-hierarchy .name {
+  font-size: 14px;
+  color: #ff00ee; 
+  margin-bottom: 10px; 
+}
+
+.company-hierarchy .manager,
+.company-hierarchy .team-leader {
+  margin-right: 40px; 
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .company-hierarchy .position {
+    font-size: 12px;
+  }
+  
+  .company-hierarchy .name {
+    font-size: 10px;
+  }
+}
+}
+
+
+.ServiceNames .LightglowPower {
+  font-family: cursive;
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000;
+  animation: LightglowPower 1s ease-in-out infinite alternate;
+  
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 800px) {
+  .ServiceNames .LightglowPower {
+    font-size: 30px;
+  }
+}
+
+
+
+
+/*6 Services Descriptions*/
+
+/*service One*/
+.serviceDes {
+  margin-top: 50px;
+  position: relative;
+  font-family: sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ServiceDesBox {
+  width: calc(43% - 0.0rem);
+  height: auto;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.074);
+  border: 1px solid rgba(255, 255, 255, 0.222);
+  border-radius: .7rem;
+  transition: all ease .3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.ServiceDesBox img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.ServiceDesBox h5 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.ServiceDesBox span {
+  color: #50bd1df9;
+}
+
+.ServiceDesBox p {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(0, 255, 242);
+  text-align: justify;
+  margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+  .serviceDes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ServiceDesBox {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/*service two "Operations & Maintenance Services"*/
+
+
+.containerMaintanance {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.containerMaintanance img {
+  margin-top: 20px;
+  width: 500px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 3%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  filter: brightness(90%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.containerMaintanance ul {
+  list-style-type: none;
+  padding: 0;
+}
+.containerMaintanance li {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+#points {
+  color: #00d607;
+}
+
+/*service Three "Management Services"*/
+
+.containerManagement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.containerManagement img {
+  margin-top: 20px;
+  width: 500px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 3%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  filter: brightness(90%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.containerManagement ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.containerManagement li {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  opacity: 0;
+  animation: typing 5s ease-in-out forwards; 
+}
+
+.containerManagement li span {
+  display: inline-block;
+}
+
+@keyframes typing {
+  from {
+    opacity: 0;
+    width: 0;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+#points {
+  color: #00d607;
+}
+
+/* Media queries for responsive design */
+
+@media (max-width: 768px) {
+  .containerManagement li {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .containerManagement li {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+
+
+
+
+
+
+

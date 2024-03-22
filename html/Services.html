@@ -1,0 +1,368 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growell Lanka (PVT) LTD </title>
+
+    <!-- Style Css Link -->
+    <link rel="stylesheet" href="../Css/style.css">
+    <!-- Main text Animatation link -->
+    <script src="../js/javascript.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
+    <!-- Media buttons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Style Css Link that for this page-->
+    <link rel="stylesheet" href="../Css/aboutStyle.css">
+
+     <!-- Style Css Link that form serviceStyle page-->
+     <link rel="stylesheet" href="../css/serviceStyle.css">
+</head>
+
+<body>
+
+  <!-- Header Contant Details -->
+  <div class="headerContantDetails">
+     <p> 📞 112-589102 / 076-0950481  ||
+         📧 info@growelllanka.com</p>
+ </div>
+
+  <!-- Navigation bar -->
+   
+ <header>
+  <div class="container"> 
+      <nav class="navbar">
+        <!-- Logo -->
+      <div class="logo">
+        <img src="./images/logo.png" alt="asdasdasd" onclick="openIndexPage()">
+     </div>
+     <script>
+      function openIndexPage() {
+        window.location.href = "index.html";
+      }
+    </script>
+    
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="aboutPageOne.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="Services.html" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="Careers.php" class="nav-link">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a href="Contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="login-signup">
+          <a href="login.php">Login</a> 
+      </div>
+      
+        <div class="smallScreen">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+   </div>
+ </header>
+
+ <!--When screen get small-->
+  <script>
+      const smallScreen = document.querySelector(".smallScreen");
+const navMenu = document.querySelector(".nav-menu");
+
+smallScreen.addEventListener("click", () => {
+  smallScreen.classList.toggle("active");
+navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+  smallScreen.classList.remove("active");
+navMenu.classList.remove("active");
+}))
+      
+  </script>
+
+  <!-- Navigation bar END -->
+
+  <!-- Home Section start -->
+  <div class="aboutHome" style="background-image: url(./images/Servicesbackground.jpg); height:50vh; ">
+    <div >
+        <h1 class="glow" style="padding: 60px; "> Our Services</h1>
+        
+    </div>
+</div>
+  
+    
+  <!-- Home Section End -->
+   <div class="allinone">
+   <div class="bodyInside">
+
+    
+   <!--========== Service Section Start ======= -->
+   <div class="ServiceContainer">
+    <div class="Servicebox">
+                                            <!--========== Service one ============ -->
+      <span class="title"></span>
+      <div id="modal6" class="modal" style="display: none;">
+        <!--Popup form-->
+        <form class="modal-content animate"  method="post">
+          <div class="imgcontainer">
+            <span onclick="closeModal('modal6')" class="close" title="Close Modal">&times;</span>
+            <img src="../html/images/companyIcon.png" alt="Avatar" class="avatar">
+          </div>
+          <h4 style="color: black;">You should Login to Book our service</h4>
+          <h6 style="color: rgb(238, 0, 0);">*If you dont have an account Please REGISTER</h6>
+          <div class="container">
+            <a href="Login.php"><button class="Servicebutton" type="button" style="background-color: rgb(37, 218, 28); color: white; padding: 5px;">LOGIN</button></a> <br>
+            <a href="registerLoginClient.php"><button  class="ServiceBOOKbutton" type="button" style="background-color: blue; color: white; padding:5px;">REGISTER</button></a>
+          </div>
+        </form>
+      </div>
+      <!-- The service div -->
+      <div>
+        <img src="./images/servicesImg/Cleaning.jpg" alt="Image 1">
+        <strong>Industrial and Commercial Cleaning Services</strong>
+        <p>With a separate janitorial service division, we are able to offer professional cleaning services for all types of buildings along with several other cleaning and sanitizing services.</p>
+        <button class="ServiceBOOKbutton" onclick="openModal('modal6')">BOOK NOW ⎆</button>
+        <a href="ServiceOneIndustrialCleaning.html"><button class="Servicebutton">LEARN MORE ⎆</button></a>
+      </div>
+    </div>
+                                            <!--========== Service Two ============ -->
+    <div class="Servicebox">
+      <span class="title"></span>
+      <div id="modal5" class="modal" style="display: none;">
+        <!--Popup form-->
+        <form class="modal-content animate"  method="post">
+          <div class="imgcontainer">
+            <span onclick="closeModal('modal5')" class="close" title="Close Modal">&times;</span>
+            <img src="../html/images/companyIcon.png" alt="Avatar" class="avatar">
+          </div>
+          <h4 style="color: black;">You should Login to Book our service</h4>
+          <h6 style="color: rgb(238, 0, 0);">*If you dont have an account Please REGISTER</h6>
+          <div class="container">
+            <a href="Login.php"><button class="Servicebutton" type="button" style="background-color: rgb(37, 218, 28); color: white; padding: 5px;">LOGIN</button></a> <br>
+            <a href="registerLoginClient.php"><button  class="ServiceBOOKbutton" type="button" style="background-color: blue; color: white; padding:5px;">REGISTER</button></a>
+          </div>
+        </form>
+      </div>
+      <!-- The service div -->
+      <div>
+        <img src="./images/servicesImg/maintanance.jpg" alt="Image 2">
+        <strong>Operations & Maintenance Services</strong>
+        <p>Get out professional maintenances teams to makes sure all your necessary businesses elements such as electricals telecommunication etc... are the functioning properly without any errors.</p>
+        <button class="ServiceBOOKbutton" onclick="openModal('modal5')">BOOK NOW ⎆</button>     
+        <a href="ServiceTwoMaintenance.html"><button class="Servicebutton">LEARN MORE ⎆</button></a>
+      </div>
+    </div>
+                                           <!--========== Service three ============ -->
+    <div class="Servicebox">
+      <span class="title"></span>
+      <div id="modal4" class="modal" style="display: none;">
+        <!--Popup form-->
+        <form class="modal-content animate"  method="post">
+          <div class="imgcontainer">
+            <span onclick="closeModal('modal4')" class="close" title="Close Modal">&times;</span>
+            <img src="../html/images/companyIcon.png" alt="Avatar" class="avatar">
+          </div>
+          <h4 style="color: black;">You should Login to Book our service</h4>
+          <h6 style="color: rgb(238, 0, 0);">*If you dont have an account Please REGISTER</h6>
+          <div class="container">
+            <a href="Login.php"><button class="Servicebutton" type="button" style="background-color: rgb(37, 218, 28); color: white; padding: 5px;">LOGIN</button></a> <br>
+            <a href="registerLoginClient.php"><button  class="ServiceBOOKbutton" type="button" style="background-color: blue; color: white; padding:5px;">REGISTER</button></a>
+          </div>
+        </form>
+      </div>
+      <!-- The service div -->
+      <div>
+        <img src="./images/servicesImg/management.jpg" alt="Image 2">
+        <strong>MANAGEMENT SUPPORT Services</strong>
+        <p>Managing a business properly is not an easy task. With our professional management support services, you will be able to manage your business more effectively and efficiently.</p>
+        <button class="ServiceBOOKbutton" onclick="openModal('modal4')">BOOK NOW ⎆</button>
+        <a href="ServiceThreeMANAGEMENT.html"><button class="Servicebutton">LEARN MORE ⎆</button></a>
+      </div>
+    </div>
+                                            <!--========== Service Four ============ --> 
+    <div class="Servicebox">
+      <span class="title"></span>
+      <div id="modal3" class="modal" style="display: none;">
+        <!--Popup form-->
+        <form class="modal-content animate"  method="post">
+          <div class="imgcontainer">
+            <span onclick="closeModal('modal3')" class="close" title="Close Modal">&times;</span>
+            <img src="../html/images/companyIcon.png" alt="Avatar" class="avatar">
+          </div>
+          <h4 style="color: black;">You should Login to Book our service</h4>
+          <h6 style="color: rgb(238, 0, 0);">*If you dont have an account Please REGISTER</h6>
+          <div class="container">
+            <a href="Login.php"><button class="Servicebutton" type="button" style="background-color: rgb(37, 218, 28); color: white; padding: 5px;">LOGIN</button></a> <br>
+            <a href="registerLoginClient.php"><button  class="ServiceBOOKbutton" type="button" style="background-color: blue; color: white; padding:5px;">REGISTER</button></a>
+          </div>
+        </form>
+      </div>
+      <!-- The service div -->
+      <div>
+        <img src="./images/servicesImg/gardening.jpg" alt="Image 2">
+        <strong>GARDENING AND LANDSCAPING Services</strong>
+        <p>Gardening and landscaping take a lot of planning. Get all your gardening and landscaping tasks done right by professionals with years of experience and have that peace of mind with us.</p>
+        <button class="ServiceBOOKbutton" onclick="openModal('modal3')" >BOOK NOW ⎆</button>
+        <a href="ServiceFourLANDSCAPING.html"><button class="Servicebutton">LEARN MORE ⎆</button></a>
+      </div>
+    </div>
+                                           <!--========== Service five ============ -->
+    <div class="Servicebox">
+      <span class="title"></span>
+      <div id="modal2" class="modal" style="display: none;">
+        <!--Popup form-->
+        <form class="modal-content animate"  method="post">
+          <div class="imgcontainer">
+            <span onclick="closeModal('modal2')" class="close" title="Close Modal">&times;</span>
+            <img src="../html/images/companyIcon.png" alt="Avatar" class="avatar">
+          </div>
+          <h4 style="color: black;">You should Login to Book our service</h4>
+          <h6 style="color: rgb(238, 0, 0);">*If you dont have an account Please REGISTER</h6>
+          <div class="container">
+            <a href="Login.php"><button class="Servicebutton" type="button" style="background-color: rgb(37, 218, 28); color: white; padding: 5px;">LOGIN</button></a> <br>
+            <a href="registerLoginClient.php"><button  class="ServiceBOOKbutton" type="button" style="background-color: blue; color: white; padding:5px;">REGISTER</button></a>
+          </div>
+        </form>
+      </div>
+      <!-- The service div -->
+      <div>
+        <img src="./images/servicesImg/hospitality.jpg" alt="Image 2">
+        <strong>HOSPITALITY Services</strong>
+        <p>Give the customers of your hotel, bar, or restaurant with the best hospitality services available and make them come back to your establishment with our professional food and beverage services.</p>
+        <button class="ServiceBOOKbutton" onclick="openModal('modal2')" >BOOK NOW ⎆</button>
+        <a href="ServiceFiveHOSPITALITY.html"><button class="Servicebutton">LEARN MORE ⎆</button></a>
+      </div>
+    </div>
+                                          <!--========== Service six ============ -->
+    <div class="Servicebox">
+      <span class="title"></span>
+      <div id="modal1" class="modal" style="display: none;">
+        <!--Popup form-->
+        <form class="modal-content animate"  method="post">
+          <div class="imgcontainer">
+            <span onclick="closeModal('modal1')" class="close" title="Close Modal">&times;</span>
+            <img src="../html/images/companyIcon.png" alt="Avatar" class="avatar">
+          </div>
+          <h4 style="color: black;">You should Login to Book our service</h4>
+          <h6 style="color: rgb(238, 0, 0);">*If you dont have an account Please REGISTER</h6>
+          <div class="container">
+            <a href="Login.php"><button class="Servicebutton" type="button" style="background-color: rgb(37, 218, 28); color: white; padding: 5px;">LOGIN</button></a> <br>
+            <a href="registerLoginClient.php"><button  class="ServiceBOOKbutton" type="button" style="background-color: blue; color: white; padding:5px;">REGISTER</button></a>
+          </div>
+        </form>
+      </div>
+      <!-- The service div -->
+      <div>
+        <img src="./images/servicesImg/sanitizing.jpg" alt="Image 2">
+        <strong>Environmental Cleaning & Sanitizing services</strong>
+        <p>Keep the environment around you clean and germ-free with our newly introduced sanitizing services that is strictly complied with Department of health guidelines.</p>
+        <button class="ServiceBOOKbutton" onclick="openModal('modal1')">BOOK NOW ⎆</button>
+        <a href="ServiceSixSanitizing.html"><button class="Servicebutton">LEARN MORE ⎆</button></a>
+      </div>
+    </div>
+    <!-- JavaScript for handling modals -->
+
+   
+  </div>
+  
+
+
+
+
+
+
+</section>
+<!-- ===========   Service Section End ============= -->
+
+
+ <!--========== Ready to work with us ======= -->
+
+   </div>
+
+<!--============== review END =================-->
+   </div>
+  
+   <footer>
+    <div class="footer">
+        <div class="glow"><p>Growell Lanka (PVT) LTD</p></div>
+    <div class="row">
+        
+   
+    </div>
+    
+    <div class="row">
+    <ul>
+    <li><a href="#">Contact us</a></li>
+    <li><a href="#">Our Services</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Terms & Conditions</a></li>
+    <li><a href="#">Career</a></li>
+    </ul>
+    </div>
+    <div class="mediaButton">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+    
+    </div>
+    
+    <div class="row">
+         Copyright  ©  2023 Growell Lanka (PVT) LTD - All rights reserved      || Designed By: Sam Mathaniha 
+    </div>
+    
+    </div>
+  </footer>
+
+<!-- ===========  Book Now POpup message JS ============= -->
+<script>
+  function openModal(modalId) {
+    var modal = document.getElementById(modalId);
+    if (modal) {
+      modal.style.display = "block";
+    }
+  }
+  
+  function closeModal(modalId) {
+    var modal = document.getElementById(modalId);
+    if (modal) {
+      modal.style.display = "none";
+    }
+  }
+  
+  window.onclick = function(event) {
+    // Close the clicked modal if it's open
+    var modals = document.querySelectorAll('.modal');
+    modals.forEach(function(modal) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+</body>
+</html>
+    

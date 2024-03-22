@@ -1,0 +1,229 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growell Lanka (PVT) LTD </title>
+
+    <!-- Style Css Link -->
+    <link rel="stylesheet" href="../Css/style.css">
+    <!-- Main text Animatation link -->
+    <script src="../js/javascript.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
+    <!-- Media buttons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Style Css Link that for this page-->
+    <link rel="stylesheet" href="../Css/aboutStyle.css">
+
+</head>
+
+<body>
+
+  <!-- Header Contant Details -->
+  <div class="headerContantDetails">
+     <p> 📞 112-589102 / 076-0950481  ||
+         📧 info@growelllanka.com</p>
+ </div>
+
+  <!-- Navigation bar -->
+   
+ <header>
+  <div class="container"> 
+      <nav class="navbar">
+        <!-- Logo -->
+      <div class="logo">
+        <img src="./images/logo.png" alt="asdasdasd" onclick="openIndexPage()">
+     </div>
+     <script>
+      function openIndexPage() {
+        window.location.href = "index.html";
+      }
+    </script>
+    
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="aboutPageOne.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="Services.html" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="Careers.php" class="nav-link">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a href="Contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="login-signup">
+          <a href="login.php">Login</a> 
+      </div>
+      
+        <div class="smallScreen">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+   </div>
+ </header>
+
+ <!--When screen get small-->
+  <script>
+      const smallScreen = document.querySelector(".smallScreen");
+const navMenu = document.querySelector(".nav-menu");
+
+smallScreen.addEventListener("click", () => {
+  smallScreen.classList.toggle("active");
+navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+  smallScreen.classList.remove("active");
+navMenu.classList.remove("active");
+}))
+      
+  </script>
+
+  <!-- Navigation bar END -->
+
+  <!-- Home Section start -->
+  <div class="aboutHome" style="background-image: url(./images/MaintanceServicesIMG.jpg); height:50vh; ">
+    <div class="ServiceNames" >
+        <h1 class="LightGlowPower" style="padding: 60px; "> Operations & Maintenance Services</h1>
+        
+    </div>
+</div>
+  
+    
+   <div class="allinone">
+   <div class="bodyInside">
+
+  <h1>SERVICE <span> SPECIFICATIONS </span></h1>
+  <hr>
+  <div class="containerMaintanance">
+    <img src="./images/MaintancePageInside.jpg" alt="Image">
+    <ul>
+      <li><i class="fa fa-dot-circle-o" id="points" aria-hidden="true"></i>  Electrical & HVAC maintenance, plumbing, carpentry and water purification</li>
+      <li><i class="fa fa-dot-circle-o" id="points" aria-hidden="true"></i>  Telecommunications</li>
+      <li><i class="fa fa-dot-circle-o" id="points" aria-hidden="true"></i>  Structural maintenance</li>
+      <li><i class="fa fa-dot-circle-o" id="points" aria-hidden="true"></i>  Production equipment maintenance</li>
+      <li><i class="fa fa-dot-circle-o" id="points" aria-hidden="true"></i>  Technical training to support ongoing program</li>
+      <li><i class="fa fa-dot-circle-o" id="points" aria-hidden="true"></i>  Increase economic reliability and resource capacity</li>
+      <li><i class="fa fa-dot-circle-o" id="points" aria-hidden="true"></i>  Improve operating efficiencies and effectiveness</li>
+      <li><i class="fa fa-dot-circle-o" id="points" aria-hidden="true"></i>  Increase equipment reliability and reduce service disruption</li>   
+    </ul>
+  </div>
+      
+  <div class="aboutCardWhite">
+    <div class="toolsWhite">
+      <div class="circle">
+        <span class="red box"></span>
+      </div>
+      <div class="circle">
+        <span class="yellow box"></span>
+      </div>
+      <div class="circle">
+        <span class="green box"></span>
+      </div>
+    </div>
+    <div class="card__contentWhite"  style="display: flex; align-items: center; justify-content: center;">
+        <h3>Are You Looking for this service :  </h3>
+        <a class="SelectButton" href="Services.html"><button id="about-btn" style="width: 170px; height:35px;">book Now </button></a>         
+    </div>
+</div> <br>
+     <!-- Contact Section Start -->
+    
+     <section class="contact" id="contact">
+      <div class="content-text">
+          <h5>CONTANCT DETAILS; </h5>
+          <p> ☎️ 0112-589102 / 076-0950481</p>
+          <p> 📧 info@growelllanka.com </p>
+          <p> 📍 Level 02, Deanston House, Level 02, Deanston Place, Colombo 03.  </p>
+          
+          <div class="googlemapLocation"> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8719685048236!2d79.84947741477279!3d6.905909895010026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2590386dbc6cf%3A0x7995656a94b64c43!2sGrowell%20Lanka%20PVT%20Ltd!5e0!3m2!1sen!2slk!4v1686201739003!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+          </div>
+      </div>
+
+      <div class="contact-form">
+          <form action="#">
+              <h5>INQUIRE US</h5>
+              <label>Name : </label>
+              <input type="name" placeholder="Name" required>
+              <label>Phone No : </label>
+              <input type="number" placeholder="Phone" required>
+              <label>Email : </label>
+              <input type="email" placeholder="Email" required>
+              <label>Message : </label>
+              <textarea name="" id="" cols="35" rows="10" placeholder="Message"></textarea>
+              <input type="submit" value="Send" class="submit" required>
+
+          </form>
+      </div>
+
+  </section><br><br>
+  <!-- Contact Section End -->
+  <!-- Ready to work with us -->
+  
+  <div class="aboutCardWhite">
+    <div class="toolsWhite">
+      <div class="circle">
+        <span class="red box"></span>
+      </div>
+      <div class="circle">
+        <span class="yellow box"></span>
+      </div>
+      <div class="circle">
+        <span class="green box"></span>
+      </div>
+    </div>
+    <div class="card__contentWhite"  style="display: flex; align-items: center; justify-content: center;">
+        <h3>READY TO WORK WITH US?  </h3>
+        <a class="SelectButton" href="aboutPageOne.html"><button id="about-btn" style="width: 170px; height:35px;">Our Services </button></a>
+    </div>
+</div>
+
+   </div>
+
+<!--============== review END =================-->
+   </div>
+  
+   <footer>
+    <div class="footer">
+        <div class="glow"><p>Growell Lanka (PVT) LTD</p></div>
+    <div class="row">
+        
+   
+    </div>
+    
+    <div class="row">
+    <ul>
+    <li><a href="#">Contact us</a></li>
+    <li><a href="#">Our Services</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Terms & Conditions</a></li>
+    <li><a href="#">Career</a></li>
+    </ul>
+    </div>
+    <div class="mediaButton">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+    
+    </div>
+    
+    <div class="row">
+         Copyright  ©  2023 Growell Lanka (PVT) LTD - All rights reserved      || Designed By: Sam Mathaniha 
+    </div>
+    
+    </div>
+  </footer>
+
+   
+</body>
+</html>
+    
